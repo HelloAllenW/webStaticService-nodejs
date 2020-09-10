@@ -17,7 +17,7 @@ var mimeModel=require('./model/getmimefromfile.js');
 
 http.createServer(function(req,res){
 
-	//xxx.json?214214124 -> xxx.json
+	//xxx.json?214214124 -> xxx.json 去掉url中?后面的
 	var pathname=url.parse(req.url).pathname;
 
 	console.log(pathname);
